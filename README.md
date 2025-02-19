@@ -13,9 +13,11 @@ A Python library for identifying company names, ticker symbols, and stock exchan
 ## Installation
 
 1. Install required packages:
-  ```pip install requests pandas fuzzywuzzy python-Levenshtein```
-2. Clone repository:
-  ```git clone https://github.com/yourusername/company-disambiguator.git```
+
+```pip install requests pandas fuzzywuzzy python-Levenshtein```
+3. Clone repository:
+
+```git clone https://github.com/yourusername/company-disambiguator.git```
 
    ```cd company-disambiguator```
 4. Get [Alpha Vantage API Key](https://www.alphavantage.co/support/#api-key)
