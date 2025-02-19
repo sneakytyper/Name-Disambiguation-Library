@@ -1,6 +1,7 @@
 # Name-Disambiguation-Library
 
 A Python library for identifying company names, ticker symbols, and stock exchanges from structured and unstructured text inputs.
+(For Quantverse Problem Statement)
 
 ## Features
 
@@ -55,3 +56,10 @@ Initialize with your API key
   ```print(result)```
 
   Output: {'error': 'No matching company found'}
+
+## Error Handling
+
+The library returns:
+- Standard result dictionary for successful matches
+- `{'error': 'No matching company found'}` for unresolved inputs
+- `None` for API communication failures
