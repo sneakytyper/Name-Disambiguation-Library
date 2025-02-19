@@ -33,7 +33,7 @@ Initialize with your API key
 
   ```disambiguator = CompanyDisambiguator(api_key='YOUR_API_KEY')```
 
-### **Example 1: Structured input**
+### Example 1: Structured input
 
   ```result = disambiguator.disambiguate("NASDAQ:AAPL")```
 
@@ -41,7 +41,7 @@ Initialize with your API key
 
   Output: {'company_name': 'Apple Inc.', 'ticker': 'AAPL', 'exchange': 'NASDAQ'}
 
-### **Example 2: Unstructured input**
+### Example 2: Unstructured input
 
   ```result = disambiguator.disambiguate("Telsa") # Handles typos```
 
@@ -49,7 +49,7 @@ Initialize with your API key
 
   Output: {'company_name': 'Tesla Inc.', 'ticker': 'TSLA', 'exchange': 'NASDAQ'}
 
-### **Example 3: Invalid input**
+### Example 3: Invalid input
 
   ```result = disambiguator.disambiguate("RandomText")```
 
