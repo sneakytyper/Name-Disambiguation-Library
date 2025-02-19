@@ -13,34 +13,38 @@ A Python library for identifying company names, ticker symbols, and stock exchan
 ## Installation
 
 1. Install required packages:
-  _pip install requests pandas fuzzywuzzy python-Levenshtein_
+  ```pip install requests pandas fuzzywuzzy python-Levenshtein```
 2. Clone repository:
-   _git clone https://github.com/yourusername/company-disambiguator.git
+  ```git clone https://github.com/yourusername/company-disambiguator.git```
 
-   cd company-disambiguator_
+   ```cd company-disambiguator```
 4. Get [Alpha Vantage API Key](https://www.alphavantage.co/support/#api-key)
 
 ## Usage Examples
 
-_from disambiguator import CompanyDisambiguator_
+```from disambiguator import CompanyDisambiguator```
 
 Initialize with your API key
-_disambiguator = CompanyDisambiguator(api_key='YOUR_API_KEY')_
+
+```disambiguator = CompanyDisambiguator(api_key='YOUR_API_KEY')```
 
 **Example 1: Structured input**
-result = disambiguator.disambiguate("NASDAQ:AAPL")
-print(result)
+
+```result = disambiguator.disambiguate("NASDAQ:AAPL")```
+```print(result)```
 
 Output: {'company_name': 'Apple Inc.', 'ticker': 'AAPL', 'exchange': 'NASDAQ'}
 
 **Example 2: Unstructured input**
-result = disambiguator.disambiguate("Telsa") # Handles typos
-print(result)
+
+```result = disambiguator.disambiguate("Telsa") # Handles typos```
+```print(result)```
 
 Output: {'company_name': 'Tesla Inc.', 'ticker': 'TSLA', 'exchange': 'NASDAQ'}
 
 **Example 3: Invalid input**
-result = disambiguator.disambiguate("RandomText")
-print(result)
+
+```result = disambiguator.disambiguate("RandomText")```
+```print(result)```
 
 Output: {'error': 'No matching company found'}
