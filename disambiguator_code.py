@@ -11,11 +11,11 @@ class FinancialAPI:
         self.headers = {'User-Agent': 'CompanyDisambiguator/1.0'}
         
     def search_symbol(self, query):
-        """Search for symbol information (to be implemented by subclasses)"""
+        #Search for symbol information (to be implemented by subclasses)
         raise NotImplementedError
         
     def get_ticker_details(self, symbol, exchange):
-        """Get ticker details (to be implemented by subclasses)"""
+        #Get ticker details (to be implemented by subclasses)
         raise NotImplementedError
 
 
