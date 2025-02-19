@@ -31,6 +31,7 @@ Initialize with your API key
 **Example 1: Structured input**
 
 ```result = disambiguator.disambiguate("NASDAQ:AAPL")```
+
 ```print(result)```
 
 Output: {'company_name': 'Apple Inc.', 'ticker': 'AAPL', 'exchange': 'NASDAQ'}
@@ -38,6 +39,7 @@ Output: {'company_name': 'Apple Inc.', 'ticker': 'AAPL', 'exchange': 'NASDAQ'}
 **Example 2: Unstructured input**
 
 ```result = disambiguator.disambiguate("Telsa") # Handles typos```
+
 ```print(result)```
 
 Output: {'company_name': 'Tesla Inc.', 'ticker': 'TSLA', 'exchange': 'NASDAQ'}
@@ -45,6 +47,7 @@ Output: {'company_name': 'Tesla Inc.', 'ticker': 'TSLA', 'exchange': 'NASDAQ'}
 **Example 3: Invalid input**
 
 ```result = disambiguator.disambiguate("RandomText")```
+
 ```print(result)```
 
 Output: {'error': 'No matching company found'}
