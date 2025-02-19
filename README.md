@@ -14,7 +14,7 @@ A Python library for identifying company names, ticker symbols, and stock exchan
 ## Contents
 - **disambiguator_code.py** , contaning whole python codebase addressing the problem statement
 - **test_cases.py**, some examples of test cases and edge cases.
-- **Readme.md**, containing proper documentation about the codebase and solution to the problem statement.
+- **README.md**, containing proper documentation about the codebase and solution to the problem statement.
 - **problem_statement.pdf** , actual problem statement pdf file shared by Quantverse
 
 ## Installation
