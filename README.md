@@ -14,44 +14,44 @@ A Python library for identifying company names, ticker symbols, and stock exchan
 
 1. Install required packages:
 
-```pip install requests pandas fuzzywuzzy python-Levenshtein```
+  ```pip install requests pandas fuzzywuzzy python-Levenshtein```
 
 3. Clone repository:
 
-```git clone https://github.com/yourusername/company-disambiguator.git```
+  ```git clone https://github.com/yourusername/company-disambiguator.git```
 
-```cd company-disambiguator```
+  ```cd company-disambiguator```
 
 4. Get [Alpha Vantage API Key](https://www.alphavantage.co/support/#api-key)
 
 ## Usage Examples
 
-```from disambiguator import CompanyDisambiguator```
+  ```from disambiguator import CompanyDisambiguator```
 
 Initialize with your API key
 
-```disambiguator = CompanyDisambiguator(api_key='YOUR_API_KEY')```
+  ```disambiguator = CompanyDisambiguator(api_key='YOUR_API_KEY')```
 
 ### **Example 1: Structured input**
 
-```result = disambiguator.disambiguate("NASDAQ:AAPL")```
+  ```result = disambiguator.disambiguate("NASDAQ:AAPL")```
 
-```print(result)```
+  ```print(result)```
 
-Output: {'company_name': 'Apple Inc.', 'ticker': 'AAPL', 'exchange': 'NASDAQ'}
+  Output: {'company_name': 'Apple Inc.', 'ticker': 'AAPL', 'exchange': 'NASDAQ'}
 
 ### **Example 2: Unstructured input**
 
-```result = disambiguator.disambiguate("Telsa") # Handles typos```
+  ```result = disambiguator.disambiguate("Telsa") # Handles typos```
 
-```print(result)```
+  ```print(result)```
 
-Output: {'company_name': 'Tesla Inc.', 'ticker': 'TSLA', 'exchange': 'NASDAQ'}
+  Output: {'company_name': 'Tesla Inc.', 'ticker': 'TSLA', 'exchange': 'NASDAQ'}
 
 ### **Example 3: Invalid input**
 
-```result = disambiguator.disambiguate("RandomText")```
+  ```result = disambiguator.disambiguate("RandomText")```
 
-```print(result)```
+  ```print(result)```
 
-Output: {'error': 'No matching company found'}
+  Output: {'error': 'No matching company found'}
